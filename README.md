@@ -7,7 +7,7 @@ Heart Disease Prediction Analysis
 
 [Project Overview](#project-overview)
 
-[Motivation].(motivation)
+[Motivation](motivation)
 
 [Data Sources](#data-sources)
 
@@ -46,34 +46,103 @@ Explore correlations between oxygen levels, symptoms, and severity
 
 Build predictive models to assist in early diagnosis
 
-### Data Analysis
+### Data Source
 ---
-Source: GitHub Repository
+The dataset used in this project contains patient health information related to COVID-19 symptoms and diagnosis from Kaggle
 
-Number of Records: 1000+ patients
+Possible attributes in the dataset include:
 
-Key Features:
+Patient ID
 
-1. Gender
+Fever
 
-2. Age
-   
-3.Symptoms (e.g., fever, cough, fatigue)
+Cough
 
-4. Oxygen Level
+Fatigue
 
-5. COVID Diagnosis (Positive / Negative)
+Breathing difficulty
+
+Other symptoms
+
+COVID-19 test result or diagnosis
+
+Dataset Type: Structured healthcare dataset
+
+Format: Excel / CSV
 
 
 ### Tools Used
 ---
 
-EXCEL
+The following tools and technologies were used in this analysis:
 
-POWERBI
+Python
 
-PYTHON
+Pandas – Data manipulation and cleaning
 
+NumPy – Numerical operations
+
+Matplotlib – Data visualization
+
+Seaborn – Statistical visualizations
+
+Jupyter Notebook – Analysis environment
+
+GitHub – Project version control and portfolio hosting
+
+
+### Data Cleaning & Transformation
+---
+Data Cleaning and Transformation
+
+Before performing analysis, the dataset was cleaned and transformed to ensure accuracy and consistency.
+
+The following steps were carried out:
+
+Handling missing values
+
+Removing duplicate records
+
+Standardizing column names
+
+Converting categorical variables into consistent formats
+
+Ensuring correct data types for numerical and categorical fields
+
+Example using Python
+
+import pandas as pd
+
+df = pd.read_excel("covid19_patient_symptoms_diagnosis.xlsx")
+
+# Check missing values
+
+df.isnull().sum()
+
+# Remove duplicates
+
+df = df.drop_duplicates()
+
+# Convert column names to lowercase
+
+df.columns = df.columns.str.lower()
+
+
+### Data Virtualization
+---
+Data virtualization was used to create simplified views of the dataset that support easier analysis and visualization.
+
+Examples include:
+
+Creating filtered datasets for patients with positive diagnoses
+
+Grouping symptom occurrences
+
+Aggregating symptom counts for visualization
+
+Example:
+
+symptom_summary = df.groupby("diagnosis").sum()
 
 ### Exploratory Data Analysis
 ---
@@ -91,6 +160,12 @@ Correlation Heatmap
 
 ### Contact
 ---
+If you would like to collaborate, discuss this project, or connect professionally:
+
+Name: Stephanie Hezekiah
+
+Role: Data Analyst | Power BI Analyst
+
 •	LinkedIn: https://www.linkedin.com/in/hezekiah-stephanie-11061422a/
 
 •	Email: stephaniehezekiel@gmail.com
