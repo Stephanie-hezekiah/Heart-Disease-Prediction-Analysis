@@ -7,6 +7,8 @@ Heart Disease Prediction Analysis
 
 [Project Overview](#project-overview)
 
+[Motivation].(motivation)
+
 [Data Sources](#data-sources)
 
 [Tools Used](#tools-used)
@@ -23,7 +25,7 @@ Heart Disease Prediction Analysis
 
 ### Project Overview
 ---
-The goal of this project is to calculate the High Risk Percentage (prevalence) across a patient population and provide health professionals with a searchable interface to drill down into specific patient metrics like cholesterol, blood pressure, and ST depression.
+This project analyzes a COVID-19 patient dataset to uncover patterns in symptoms, demographics, and oxygen levels. It also implements predictive machine learning models to identify the key factors influencing COVID-19 diagnosis. The goal is to provide actionable insights and a reproducible workflow for researchers and data enthusiasts.
 
 Key Metrics & Calculations
 
@@ -34,8 +36,57 @@ Presence vs. Absence: Visual breakdown of diagnostic results.
 Key Risk Indicators: Analysis of Chest Pain Type, Max HR, and Thallium levels.
 
 
+### Motivation
+---
+COVID-19 continues to impact global health. By analyzing real patient data, we can:
+
+Understand symptom patterns across genders and age groups
+
+Explore correlations between oxygen levels, symptoms, and severity
+
+Build predictive models to assist in early diagnosis
+
+### Data Analysis
+---
+Source: GitHub Repository
+
+Number of Records: 1000+ patients
+
+Key Features:
+
+1. Gender
+
+2. Age
+   
+3.Symptoms (e.g., fever, cough, fatigue)
+
+4. Oxygen Level
+
+5. COVID Diagnosis (Positive / Negative)
 
 
+### Tools Used
+---
+
+EXCEL
+
+POWERBI
+
+PYTHON
+
+
+### Exploratory Data Analysis
+---
+
+Gender Distribution of COVID Cases
+
+Age Distribution of Infected Patients
+
+Most Common Symptoms
+
+Oxygen Level Comparison by Gender
+
+Correlation Heatmap
 
 
 ### Contact
